@@ -1,96 +1,74 @@
 @charset "UTF-8";
 body {
-    margin: 0;
-    padding: 0;
-    font-family: verdana;
-    color: #262f38;
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  color: #262f38;
 }
 
 header {
-display: block;
-margin-left: 10px;
-margin-top: 10px;
-float: left;
+  display: block;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
 }
 
 a {
-    color: #000;
+  color: #000;
 }
 
 a:hover {
-    color: #81ecf6;
+  color: #81ecf6;
 }
 
 aside {
-    margin-left: 10px;
-    margin-top: 10px;
-    float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
 }
 
 main {
-    clear: both;
-    margin-left: 220px;
-    margin-top: 40px;
+  clear: both;
+  margin-left: 220px;
+  margin-top: 40px;
 }
 
 h1 {
-    font-size: 24px;
-    text-align: center;
-    background-color: #c3eef2;
-    padding: 10px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 24px;
+  text-align: center;
+  background-color: #c3eef2;
+  padding: 10px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
-    font-size: 20px;
-    margin-left: 30px;
+  font-size: 20px;
+  margin-left: 30px;
 }
 
 nav {
-    display: block;
-    font-size: 12px;
-    margin: 10px;
-    line-height: 26px;
+  display: block;
+  font-size: 12px;
+  margin: 10px;
+  line-height: 26px;
 }
 
 footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    clear: left;
-    margin-left: 680px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  clear: left;
+  margin-left: 680px;
 }
 
-#left-column {
-    float: left;
-    background: #d2ede3;
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-radius: 20px;
-}
-
-#middle-column {
-    float: left;
-    background: #d2ede3;
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-radius: 20px;
-}
-
-#right-column {
-    float: left;
-    background: #d2ede3;
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-radius: 20px;
+#left-column, #middle-column, #right-column {
+  float: left;
+  background: #d2ede3;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 20px;
 }
