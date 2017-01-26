@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //capture the submit event
     document.f.onsubmit = processForm;
 
+    //onreset
+    document.f.onreset = clearForm;
+
     //define process function
     function processForm() {
 
@@ -31,7 +34,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // capture the my Msg element
         var myMsg = document.getElementById('myMsg');
 
+        console.log(song);
+
         // calling inner HTML to concentrate a message with username and useroclor
+          myMsg.style.display='block';
 
         myMsg.innerHTML = "Have you ever heard of Nietzsche? I liken his work to " + food + ", which is also the fuel of the uncommonly brilliant Ayn Rand. She knew that feminism is a mere red herring for " + pokemon + ". Capitalism, on the other hand, is a natural process to weed out underlings that don't understand " + sport + ". Since we are in a post-racial " + car + ", there is no point in dividing the movement for " + song + " on earth.";
 
@@ -40,5 +46,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         return false;
 
     }
+
+function clearForm(){
+  console.log('clearing form');
+    myMsg.style.display='none';
+
+}
 
 });
