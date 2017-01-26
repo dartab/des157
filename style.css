@@ -62,7 +62,7 @@ footer {
   margin-left: 680px;
 }
 
-#left-column, #middle-column, #right-column {
+.column {
   float: left;
   background: #d2ede3;
   width: 250px;
