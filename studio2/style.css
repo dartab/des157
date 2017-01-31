@@ -20,8 +20,9 @@ a {
 
 #man {
     float: left;
-    margin-bottom: -6px;
     margin-right:20px;
+    margin-top: 50px;
+    margin-bottom: -6px
 }
 
 h1 {
@@ -36,7 +37,7 @@ h2 {
 }
 
 article {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
 }
 
@@ -44,14 +45,13 @@ article {
     margin-bottom: 10px;
 }
 
-.question {
-    font-weight: bold;
+h3 {
     color: #654a69;
+    font-size: 16px;
 }
 
 input[type=text] {
     padding: 5px;
-    margin-left: 10px;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #bcbcbc;
