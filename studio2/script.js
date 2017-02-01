@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // calling inner HTML to concentrate a message with username and useroclor
         myMsg.style.display = 'block';
 
-        myMsg.innerHTML = "Have you ever heard of Nietzsche? I liken his work to " + axe + ", which is also the fuel of the uncommonly brilliant Ayn Rand. She knew that feminism is a mere allegory for " + cry + ". Capitalism, on the other hand, is a natural process to weed out underlings that don't understand " + sport + ". Since we are in a post-racial, post-sexist " + car + ", there is no point in dividing the movement for " + song + " on earth.";
+        myMsg.innerHTML = "Have you ever heard of Nietzsche? I liken his work to " + axe + ", which is also the fuel of the uncommonly brilliant Ayn Rand. She knew that feminism is a mere allegory for " + cry + ". Capitalism, on the other hand, is a natural process to weed out underlings that don't understand " + sport + ". Since we are in a post-racial " + car + ", there is no point in dividing the movement for " + song + " on earth.";
 
 
         //prevent page from reloading
