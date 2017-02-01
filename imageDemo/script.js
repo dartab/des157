@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //create an array to hold images
     var imgs = ["images/bemine.png", "images/biteme.png", "images/love.png", "images/lovestinks.png", i"mages/puke.png", "images/question.png", "images/youandme.png"];
 
-    // create an empty array t ohold the images as objects
+    // create an empty array to hold the images as objects
     var preload = [];
 
     // traverse the array for preloading images
