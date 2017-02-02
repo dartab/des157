@@ -1,0 +1,50 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 4: The Sum of a Range</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 4: The Sum of a Range</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // write a range function that takes two arguments, start and end, returning an array containing all the numbers in the range
+        function range(start, end) {
+            var nums = [];
+            for (var i = start; i <= end; i++)
+                nums.push(i);
+            // return array
+            return nums;
+        }
+
+        // range set for output on the console
+        console.log(range(1, 10));
+
+        // I am having a hard time figuring out how to output the sum of the array numbers
+        // function sum(nums) {
+
+        // range set for sum output on console
+        // console.log(sum(range(1, 10)));
+    </script>
+</body>
