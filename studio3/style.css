@@ -13,7 +13,7 @@
 body {
     background-color: #aadff0;
     font-size: 16px;
-      font-family: 'Hammersmith One', sans-serif;
+   font-family: 'Hammersmith One', sans-serif;
 }
 
 a {
@@ -24,7 +24,6 @@ a {
 
 a:hover {
     background-color: #fef494;
-    cursor: hand;
 }
 
 main {
