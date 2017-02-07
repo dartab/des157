@@ -12,8 +12,8 @@
 
 body {
     background-color: #aadff0;
-    font-family: 'Questrial', sans-serif;
     font-size: 16px;
+      font-family: 'Hammersmith One', sans-serif;
 }
 
 a {
@@ -68,7 +68,7 @@ main {
 aside{
   color: #fef494;
   font-size: 20px;
-  font-family: 'Hammersmith One', sans-serif;
+
   position: absolute;
   top: 854px;
   left: 3px;
