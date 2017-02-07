@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    background-color: #aadff0;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #ef3c31;
+    border: 5px solid transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #fef494;
+    cursor: hand;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 1000px;
+    position: relative;
+}
+
+#ziggy{
+  position: absolute;
+  left: 155px;
+  top: 315px;
+}
+
+#ball{
+  position: absolute;
+  left: 630px;
+  top: 700px;
+}
+
+#food{
+  position: absolute;
+  left: 567px;
+  top: 189px;
+}
+
+#outside{
+  position: absolute;
+  left: 71px;
+  top: 176px;
+}
+
+#picture{
+  position: absolute;
+  left: 407px;
+  top: 280px;
+}
+
+aside{
+  color: #fef494;
+  font-size: 20px;
+  font-family: 'Hammersmith One', sans-serif;
+  position: absolute;
+  top: 854px;
+  left: 3px;
+  width:924px;
+  height:50px;
+  background-color: #000;
+  display:none;
+  border-bottom: 1px solid black;
+}
+aside p {
+  position: relative;
+  top: 15px;
+  text-align: center;
+}
+aside #close, #close1, #close2, #close3, #close4{
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  font-size: 50px;
+  color: #ef3c31;
+}
+
+footer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 1000px;
+}
