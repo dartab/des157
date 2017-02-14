@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var ball = document.getElementById('ball');
     var ballTip = document.getElementById('ballTip');
 
-    // design variables
+    // drink variables
     var drink = document.getElementById('drink');
     var drinkTip = document.getElementById('drinkTip');
 
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     ball.addEventListener('click', function() {
-        dotAnim = requestAnimationFrame(moveStar);
+        starAnim = requestAnimationFrame(moveStar);
     });
 
     function showBallTip() {
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     /// star animation variables
     var stopAnimation = document.getElementById('stopAnimation');
     var star = document.getElementById('star');
-    var dotAnim;
+    var starAnim;
 
     stopAnimation.addEventListener('click', function() {
         console.log('stop clicked');
@@ -106,14 +106,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
-
+// drink timer
 var alertTimer;
 
 drink.addEventListener ('click', function(){
   console.log('clicked start');
   alertTimer = setTimeout(showAlert, 1000);
 });
-
 
 function showAlert(){
   alert('Congratulations! Your chakras have been cleansed.');
