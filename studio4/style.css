@@ -113,8 +113,8 @@ main {
 
 #star {
     position: absolute;
-    top: 580;
-    left: 246;
+    top: 0px;
+    left: 0px;
     margin: 24px;
 }
 
