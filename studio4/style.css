@@ -7,7 +7,7 @@
 
 * {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
 }
 
 body {
@@ -33,7 +33,6 @@ main {
     background: -o-linear-gradient(top, rgba(167, 253, 252, 1) 0%, rgba(98, 95, 132, 1) 58%, rgba(22, 18, 72, 1) 100%);
     background: -ms-linear-gradient(top, rgba(167, 253, 252, 1) 0%, rgba(98, 95, 132, 1) 58%, rgba(22, 18, 72, 1) 100%);
     background: linear-gradient(to bottom, rgba(167, 253, 252, 1) 0%, rgba(98, 95, 132, 1) 58%, rgba(22, 18, 72, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7fdfc', endColorstr='#161248', GradientType=0);
     width: 100%;
 }
 
