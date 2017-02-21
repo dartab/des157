@@ -3,9 +3,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
-    <script type="text/javascript" src="lib/soundjs-NEXT.combined.js"></script>
-
-    <script id="editable">
       var preload;
 
       function init() {
@@ -73,6 +70,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
           target.className = "gridBox";
         });
       }
-    </script>
 
 });
