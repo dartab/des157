@@ -86,3 +86,8 @@ footer {
     clear: left;
     margin-left: 620px;
 }
+
+img.center {
+    display: block;
+    margin: auto;
+}
