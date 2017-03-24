@@ -1,58 +1,100 @@
 // JavaScript Document
-console.log('reading');
 
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
-    //capture the submit event
-    document.f.onsubmit = processForm;
 
-    //onreset
-    document.f.onreset = clearForm;
+    // alienhead id
+    var alienhead = document.getElementById('alienhead');
 
-    //define process function
-    function processForm() {
+    // hover over alienhead
+    alienhead.addEventListener('mouseover', function() {
+        alienhead.style.opacity = 1;
+        alienhead.src = 'images/alien_head.png';
+        alienhead.style.cursor = "pointer";
+    });
 
-        //store user name in a variable
-        var axe = document.f.axe.value;
-        // alert('Hi ' + userName);
+    alienhead.addEventListener('mouseout', function() {
+        alienhead.style.opacity = 1;
+        alienhead.src = 'images/alien_head_01.png';
+    });
 
-        //store userColor in a variable called userColor
-        var cry = document.f.cry.value;
+    // click on alienhead for info box
+    alienhead.addEventListener('click', function() {
+        aboutalienhead.style.display = "block";
+        aboutalienbody.style.display = "none";
+        aboutalienhead.style.cursor = "pointer";
+    });
 
-        //store userColor in a variable called userColor
-        var sport = document.f.sport.value;
-
-
-        //store userColor in a variable called userColor
-        var car = document.f.car.value;
-
-        //store userColor in a variable called userColor
-        var song = document.f.song.value;
-
-
-        // capture the my Msg element
-        var myMsg = document.getElementById('myMsg');
-
-        console.log(song);
-
-        // calling inner HTML to concentrate a message with username and useroclor
-        myMsg.style.display = 'block';
-
-        myMsg.innerHTML = "Have you ever heard of Nietzsche? I liken his work to " + axe + ", which is also the fuel of the uncommonly brilliant Ayn Rand. She knew that feminism is a mere allegory for " + cry + ". Capitalism, on the other hand, is a natural process to weed out underlings that don't understand " + sport + ". Since we are in a post-racial " + car + ", there is no point in dividing the movement for " + song + " on earth.";
+    // alienhead info box that displays on click
+    document.getElementById('aboutalienhead');
+    // var close = document.getElementById('close');
 
 
-        //prevent page from reloading
-        return false;
+    aboutalienhead.addEventListener('click', function() {
+        aboutalienhead.style.display = "none";
 
+    });
+
+
+
+
+
+
+    // alienbody id
+    var alienbody = document.getElementById('alienbody');
+
+    // hover over alienbody
+    alienbody.addEventListener('mouseover', function() {
+        alienbody.style.opacity = 1;
+        alienbody.src = 'images/alien_body.png';
+        alienbody.style.cursor = "pointer";
+    });
+
+    alienbody.addEventListener('mouseout', function() {
+        alienbody.style.opacity = 1;
+        alienbody.src = 'images/alien_body_01.png';
+    });
+
+    // click on alienbody for info box
+    alienbody.addEventListener('click', function() {
+        aboutalienbody.style.display = "block";
+        aboutalienhead.style.display = "none";
+        aboutalienbody.style.cursor = "pointer";
+    });
+
+    // alienbody info box that displays on click
+    document.getElementById('aboutalienbody');
+    // var close1 = document.getElementById('close1');
+
+
+    aboutalienbody.addEventListener('click', function() {
+        aboutalienbody.style.display = "none";
+
+    });
+
+
+
+    var eat = document.getElementById('eat');
+    var eatTip = document.getElementById('eatTip');
+
+    var tipTimer;
+
+    eat.addEventListener('mouseover', function() {
+        console.log('mouseover on eat');
+        tipTimer = setTimeout(showEatTip, 1000);
+    });
+
+    eat.addEventListener('mouseout', function() {
+        console.log('mouseout on eat');
+        clearTimeout(tipTimer);
+        eatTip.style.opacity = 0;
+    });
+
+    function showEatTip() {
+        console.log('showing msg');
+        eatTip.style.opacity = 1;
     }
 
-    function clearForm() {
-        console.log('clearing form');
-        myMsg.style.display = 'none';
-
-    }
-
-
-
+  
 });

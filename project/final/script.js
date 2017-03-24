@@ -34,44 +34,67 @@ document.addEventListener("DOMContentLoaded", function(event) {
     aboutalienhead.addEventListener('click', function() {
         aboutalienhead.style.display = "none";
 
-      });
+    });
 
 
 
 
 
 
-      // alienbody id
-      var alienbody = document.getElementById('alienbody');
+    // alienbody id
+    var alienbody = document.getElementById('alienbody');
 
-      // hover over alienbody
-      alienbody.addEventListener('mouseover', function() {
-          alienbody.style.opacity = 1;
-          alienbody.src = 'images/alien_body.png';
-          alienbody.style.cursor = "pointer";
-      });
+    // hover over alienbody
+    alienbody.addEventListener('mouseover', function() {
+        alienbody.style.opacity = 1;
+        alienbody.src = 'images/alien_body.png';
+        alienbody.style.cursor = "pointer";
+    });
 
-      alienbody.addEventListener('mouseout', function() {
-          alienbody.style.opacity = 1;
-          alienbody.src = 'images/alien_body_01.png';
-      });
+    alienbody.addEventListener('mouseout', function() {
+        alienbody.style.opacity = 1;
+        alienbody.src = 'images/alien_body_01.png';
+    });
 
-      // click on alienbody for info box
-      alienbody.addEventListener('click', function() {
-          aboutalienbody.style.display = "block";
-          aboutalienhead.style.display = "none";
-          aboutalienbody.style.cursor = "pointer";
-      });
+    // click on alienbody for info box
+    alienbody.addEventListener('click', function() {
+        aboutalienbody.style.display = "block";
+        aboutalienhead.style.display = "none";
+        aboutalienbody.style.cursor = "pointer";
+    });
 
-      // alienbody info box that displays on click
-      document.getElementById('aboutalienbody');
-      // var close1 = document.getElementById('close1');
+    // alienbody info box that displays on click
+    document.getElementById('aboutalienbody');
+    // var close1 = document.getElementById('close1');
 
 
-      aboutalienbody.addEventListener('click', function() {
-          aboutalienbody.style.display = "none";
-
-        });
-
+    aboutalienbody.addEventListener('click', function() {
+        aboutalienbody.style.display = "none";
 
     });
+
+
+
+    var eat = document.getElementById('eat');
+    var eatTip = document.getElementById('eatTip');
+
+    var tipTimer;
+
+    eat.addEventListener('mouseover', function() {
+        console.log('mouseover on eat');
+        tipTimer = setTimeout(showEatTip, 1000);
+    });
+
+    eat.addEventListener('mouseout', function() {
+        console.log('mouseout on eat');
+        clearTimeout(tipTimer);
+        eatTip.style.opacity = 0;
+    });
+
+    function showEatTip() {
+        console.log('showing msg');
+        eatTip.style.opacity = 1;
+    }
+
+  
+});
