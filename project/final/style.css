@@ -362,7 +362,7 @@ input[type=reset]:hover {
     font-weight: bold;
 }
 
-.button {
+button {
   width: 100%;
   background-color: #619d43;
   color: white;
@@ -376,7 +376,7 @@ input[type=reset]:hover {
   cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     background-color: #8bc85f;
 }
 
