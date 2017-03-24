@@ -414,3 +414,10 @@ img.contact{
     text-decoration: none;
     color: #388482;
   }
+
+  a.button{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  }
