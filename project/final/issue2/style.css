@@ -16,6 +16,7 @@ header {
     margin-top: 0px;
     width: 100%;
     height: 60px;
+    position: fixed;
 }
 
 img.header {
@@ -417,5 +418,6 @@ img.contact{
   }
 
 iframe{
-  margin:20px;
+  margin-left:20px;
+  margin-top: 84px;
 }
