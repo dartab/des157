@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   this._pickAnswer = function($answer, $answers){
     $answers.find('.quiz-answer').removeClass('active');
-    $answer.addClass('active');
+$answer.addClass('active');
   }
   this._calcResult = function(){
     var numberOfCorrectAnswers = 0;
@@ -48,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
     if ( numberOfCorrectAnswers == 0 ) {
-      return {code: 'bad', text: 'you are just straight up awful, and probably a troll. please begin improving your life by starting therapy and repairing your relationship with your mother.'};
+      return {code: 'bad', text: 'You are just straight up awful, and probably a troll. Please begin improving your life by starting therapy and repairing your relationship with your mother.'};
     }
     else if ( numberOfCorrectAnswers < 7 || numberOfCorrectAnswers == 1 ) {
-      return {code: 'mid', text: 'you are an ordinary misogynist! there are an awful lot of you out there. work on making good on your pretenses and don’t take credit for being hip when you’re really just an asshole!'};
+      return {code: 'mid', text: 'You are an ordinary misogynist! There are an awful lot of you out there. Work on making good on your pretenses and don’t take credit for being hip when you’re really just an asshole!'};
     }
     else if ( numberOfCorrectAnswers == 7 ) {
-      return {code: 'good', text: 'good job! you passed respecting women & femmes 101. please consult other resources to apply this to your life!'};
+      return {code: 'good', text: 'Good job! You passed Respecting Women & Femmes 101. Please consult other resources to apply this to your life!'};
     }
   }
   this._isComplete = function(){
