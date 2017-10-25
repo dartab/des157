@@ -8,8 +8,7 @@ body {
 }
 
 .title {
-  margin-left: -20px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -25,13 +24,14 @@ h2 {
   font-family: 'Yantramanav', sans-serif;
   color: #15572c;
   text-shadow: 2px 2px #cce0ca;
-  background-image: <img src="footer.png">
 }
 
 .quiz {
-  padding: 0 30px 20px 30px;
+  padding: 0 30px 20px 34px;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 20px auto;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 20px;
 }
 
 .quiz ul {
